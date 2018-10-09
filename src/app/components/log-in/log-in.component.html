@@ -1,0 +1,17 @@
+<form (ngSubmit)="onLogin()" #loginReference="ngForm">
+  <div class="form-group">
+    <div>
+    <h2>Log in</h2>
+      <label for="email" id="email">Username or Email or Mobile number</label>
+      <input type="email" name="email" required ngModel class="form-control">
+    </div>
+    <div>
+      <label for="password" id="password">Password</label>
+      <input type="password" name="password" required minlength="8" ngModel class="form-control">
+    </div>
+    <div>
+      <br>
+      <button type="submit" class="btn btn-primary">Log in</button>
+    </div>
+  </div>
+</form>
